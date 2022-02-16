@@ -102,6 +102,8 @@ struct BTreeNode* insert_element(struct BTreeNode* node, int element)
 	if(node == NULL) {
 		struct BTreeNode* newNode = (struct BTreeNode*) malloc(sizeof(struct BTreeNode));
 		newNode->element = element;
+		newNode->leftnode = NULL;
+		newNode->rightnode = NULL;
 		return newNode;
 	}
 	if(element < node->element) {
