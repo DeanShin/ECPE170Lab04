@@ -240,6 +240,14 @@ int main (int argc, char **argv)
 	free(hyst);
 	free(High_res);
 	free(threshold);
+
+	free(HRH);
+	free(HRV);
+	free(Gx_mask);
+	free(Gy_mask);
+	free(Vmap);
+	free(Hmap);
+	free(org_img);
 	
 	return 0;
 

@@ -126,6 +126,8 @@ void  mean_keeping(float *org_img,float *Hysteresis,int width,int height,int alp
 				printf("\n pixel intensity: %f\n",(float)org_img[i*width+j]);
 			}*/
 	}
+	free(patch3x3);
+	free(patchaxa);
 } 
 
 int compare(int v,int d, int ad)

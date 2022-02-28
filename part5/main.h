@@ -147,6 +147,8 @@ void double_thresh(float *suppress, float * hyst, int img_width, int img_height)
                                 hyst[i*img_width + j]= (float)125;
                         else
                                 hyst[i*img_width + j]= (float)0;	
+
+        free(supp);
 		
 }
 
